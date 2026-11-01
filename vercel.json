@@ -1,0 +1,37 @@
+{
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "framework": null,
+  "outputDirectory": "public",
+  "headers": [
+    {
+      "source": "/(.*)",
+      "headers": [
+        {
+          "key": "X-Content-Type-Options",
+          "value": "nosniff"
+        },
+        {
+          "key": "Referrer-Policy",
+          "value": "strict-origin-when-cross-origin"
+        }
+      ]
+    }
+  ],
+  "redirects": [
+    {
+      "source": "/cloud-to-edge.html",
+      "destination": "/work.html",
+      "permanent": false
+    },
+    {
+      "source": "/distributed-logs.html",
+      "destination": "/work.html",
+      "permanent": false
+    },
+    {
+      "source": "/distributed-crawler.html",
+      "destination": "/work.html",
+      "permanent": false
+    }
+  ]
+}

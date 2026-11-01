@@ -1,0 +1,15 @@
+{
+  "name": "hoang-son-portfolio",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Static personal portfolio for Tran Vu Hoang Son",
+  "scripts": {
+    "dev": "node server.mjs",
+    "preview": "node server.mjs",
+    "start": "node server.mjs",
+    "check": "node --check server.mjs && node --check public/app.js"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}
